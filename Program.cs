@@ -26,6 +26,7 @@
 
             Operation addition2 = new(calc.Subtraction);
             int response = addition2(10,8);
+
             Console.WriteLine($"Subtraction result: {response}");
         }
     }
