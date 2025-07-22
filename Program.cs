@@ -19,14 +19,14 @@
 
         static void Main(string[] args)
         {
-            Calculator calc = new Calculator();
-            Operation addition = new Operation(Calculator.Addition);
+            Calculator calc = new();
+            Operation addition = new(Calculator.Addition);
             int result = addition(20, 5);
             Console.WriteLine($"Addition result: {result}");
 
-            Operation addition2 = new Operation(calc.Subtraction);
-            int respone = addition2(10,8);
-            Console.WriteLine($"Subtraction result: {respone}");
+            Operation addition2 = new(calc.Subtraction);
+            int response = addition2(10,8);
+            Console.WriteLine($"Subtraction result: {response}");
         }
     }
 }
